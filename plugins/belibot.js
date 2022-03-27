@@ -14,7 +14,7 @@ let handler = async (m, { conn }) => {
 ║│➸ *GOPAY*: 085828764046
 ║╰─────────
 ▌│█║▌║▌║║▌║▌║█│▌▌│█║▌║▌║║▌║▌║█│
-╰═══════════════════════`.trim(), watermark, 'Dana', '#viadana', 'Pulsa', '#viapulsa', m)
+╰═══════════════════════`.trim(), watermark, 'Dana', '#viadana', 'gopay', '#viapulsa', m)
 }
 
 handler.command = /^sewabot$/i
