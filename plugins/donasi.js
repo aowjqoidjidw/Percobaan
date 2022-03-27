@@ -4,10 +4,11 @@ let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fet
 
 Hai 👋
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
-┌〔 Donasi • Emoney 〕
-├ PULSA : 6285730903853
-├ DANA : 6285730903853
-└────
+╭═══════════════════════
+║╭──❉ 〔 ⳹ ❋ཻུ۪۪⸙ *DONASI *⳹ ❋ཻུ۪۪ 〕 ❉────── 
+║│➸  *DANA: 085828764046*
+║│➸  *GOPAY: 085828764046*
+╰─────────❉
 `.trim(), 'Donasi bg Biar Bot Nya on 24Jam', 'SEWA', '.sewa')
 handler.help = ['donasi']
 handler.tags = ['info']
