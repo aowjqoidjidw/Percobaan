@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'AlyaaXzy tidak aktif' : banned ? 'kamu dibanned' : 'AlyaaXzy disini',
-                '©AlyaaXzy',
+                isBanned ? 'zifabotz tidak aktif' : banned ? 'kamu dibanned' : 'APAAN NGETAG",ADA BANSOS KAH🗿?',
+                '©zifabotz',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -29,20 +29,20 @@ handler.all = async function (m, { isBlocked }) {
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
-╠➥ *1 Bulan* :      *Rp 10000*
-╠➥ *Permanen* : *Rp 15000*
-╠➥ *Premium* :   *Rp 15000*
-╠➥ *Sc Bot* :        *Masih Beta*
-║
-╠═〘 PEMBAYARAN 〙 ═
-╠➥ Dana, Dan Pulsa
-║
-╠═ Tertarik Untuk Beli Bot Ini?
-╠➥Ketuk Tombol Di Bawah Ya
-║
-╠═ ©2021 Rpg wabot-aq
-╠═ Scrip original by Nurutomo
-╠═〘 AlyaaXzy〙 ═`.trim(), '©AlyaaXzy', 'Dana', '#viadana', 'Pulsa', '#viapulsa', m)
+╭═══ 〔 𝐋𝐈𝐒𝐓 𝐁𝐄𝐑𝐋𝐀𝐍𝐆𝐆𝐀𝐍𝐀𝐍 〕 ════
+├⬡ 𝟏 ᗷᑌᒪᗩᑎ
+├⬡ 4 ᗷᑌᒪᗩᑎ
+├⬡ 8 BULAN
+└═══════════════
+𝗦𝗶𝗹𝗮𝗵𝗸𝗮𝗻 𝗸𝗹𝗶𝗸 𝗽𝗮𝗱𝗮 "𝗟𝗶𝘀𝘁 𝗛𝗮𝗿𝗴𝗮" 𝘂𝗻𝘁𝘂𝗸 𝗺𝗲𝗹𝗶𝗵𝗮𝘁 𝗹𝗶𝘀𝘁.
+╭═══════════════════════
+║╭──❉ 〔 𝐕𝐈𝐀 𝐌𝐎𝐁𝐈𝐋𝐄 〕 ❉──────
+║│➸ *DANA* : 085828764046
+║│➸ *PULSA*: 085828764046
+║│➸ *GOPAY*: 085828764046
+║╰─────────
+▌│█║▌║▌║║▌║▌║█│▌▌│█║▌║▌║║▌║▌║█│
+╰═══════════════════════`.trim(), '©zifabotz', 'Dana', '#viadana', 'Pulsa', '#viapulsa', m)
 }
 
     // salam
