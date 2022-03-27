@@ -1,39 +1,47 @@
 let fetch = require('node-fetch')
+let { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn }) => {
-    let teks = `
-Kebijakan Privasi, Syarat Ketentuan dan Peraturan R-Txzy Bot
+    let kontol = `╭─────[ *RULES* ]─────✧
+┴
+│¹ Dilarang Hina zifabotz / Owner
+│² Dilarang Spam Command
+│³ Dilarang Kirim Virtex ke zifabotz
+│⁴ Dilarang Spam Menu Ga Jelas
+│⁵ Dilarang Telp / Vc
+│⁶ Dilarang Culik Bot
+│⁷ Dilarang Promosi
+│⁸ Dilarang Meniru pesan Bot
+│⁹ Bot Tidak Menerima Save Kontak
+│¹⁰ Dilarang Chat Owner Ga Jelas
+│¹¹ No plagiat
+┬
+╰──────────···
 
-Kebijakan Privasi
-1. R-Txzy tidak akan merekam data riwayat chat user.
-2. R-Txzy tidak akan menyebarkan nomor users.
-3. R-Txzy tidak akan menyimpan media yang dikirimkan oleh users.
-4. R-Txzy tidak akan menyalah gunakan data data users.
-5. Owner R-Txzy berhak melihat data riwayat chat users.
-6. Owner R-Txzy berhak melihat status users.
-7. Owner R-Txzy dapat melihat riwayat chat, dan media yang dikirimkan users.
-
-Peraturan R-Txzy Bot
-1. Users dilarang menelpon maupun memvideo call nomor bot.
-2. Users dilarang mengirimkan berbagai bug, virtex, dll ke nomor bot.
-3. Users diharap tidak melakukan spam dalam penggunaan bot.
-4. Users dilarang menambahkan nomor bot secara illegal, untuk menambahkan silahkan hubungi owner.
-5. Users diharap untuk tidak menyalah gunakan fitur fitur bot.
-
-Syarat Ketentuan R-Txyz Bot
-1. Bot akan keluar dari group apabila sudah waktunya keluar.
-2. R-Txzy dapan mem-ban users secara sepihak terlepas dari users salah atau tidak.
-3. R-Txzy *tidak akan bertanggungjawab atas apapun yang users lakukan terhadap fitur bot.*
-4. R-Txzy akan memberlakukan hukuman: block atau ban terhadap users yang melanggar peraturan.
-5. R-Txzy bertanggung jawab atas kesalahan fatal dalam programing maupun owner.
-
-- AlyaXzy
-- TioXzy
-
-Peraturan: 1 Februari 2022
-`.trim()
-    conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), teks, watermark, 'Menu', '.menu', 'Owner', '.owner', m)
+╭─────[ *HUKUM* ]─────✧
+┴
+│ 1 & 11 = Block + banned permanent
+│ 2,4,6 & 8 = Banned sementara
+│ 3 = War
+│ 5 = Block sementara
+│ 9 & 10 = Block permanent
+┬
+╰──────────···`.trim()
+  const button = {
+        buttonText: 'Klik Di sini',
+        description: kontol,
+        sections:  [{title: "Silahkan di pilih gausah pilih yang gaada", rows: [
+        {title: 'Menu Utama', description: "Kembali ke Menu Utama", rowId:".?"},
+        {title: 'Sewa Bot', description: "Sewa bot dengan memasukkan bot ke grup kamu", rowId:".sewa"},
+        {title: 'Group Bot', description: "Official Group Bot zifabotz", rowId:".gcbot"},
+        {title: 'Donasi', description: "Donasi agar selalu online", rowId:".donasi"},
+        {title: 'Owner', description: "Owner/Creator Bot", rowId:".owner"},
+       ] }],
+        listType: 1
+       }
+    conn.sendMessage(m.chat, button, MessageType.listMessage, { quoted: m })
 }
-handler.help = ['peraturan']
-handler.command = /^(snk|syarat|peraturan|rules)$/i
-handler.tags = ['main']
+
+handler.tags = ['main', 'update']
+handler.command = /^(rules|rule)$/i
+handler.help = ['rules']
 module.exports = handler
