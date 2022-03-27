@@ -1,21 +1,13 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text }) => {
   let ext= `
-┌─〔 GRUB BOT 〕
-│ 
-├➥ *Link grub bot by R-Txzy*
-│https://chat.whatsapp.com/HJ9pD2XJ8vq7whuAYOvT1Y
-├➥ *Yang ada Bot Boleh*
-│   *masukin ke grub✅*
-├➥ *Admin Selalu Benar✅*
-├➥ *Jangan spam karna*
-│   *owner grub hp nya kentang✅*
-├➥ *Sebelum Bergabung Baca*
-│   *Rules Terlebih dahulu❗*
-│
-├➥*©GRUP-BOTZ 2021*
-└─「 *BOT* 」
-
+╭═══════════════════════
+║╭──❉ 〔 ⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪ 〕 ❉────── 
+║│➸ *_GROUP OFFC ZIFABOTZ_*
+║│➸  *https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv*
+╰─────────❉
+▌│█║▌║▌║║▌║▌║█│▌
+⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪⸙ by.rozi
 `.trim()
 conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'GRUB SIRAD')).buffer(), ext, 'Grub Bot By Raditya', 'SIAP BANG🗿', 'AUTO JOIN', 'Donasi', '.donasi', m)
 
