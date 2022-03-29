@@ -20,6 +20,19 @@
 </h4>
 </p>
 
+## FOR DEPLOY REPLIT USER
+
+```
+Open Console
+------------
+> npm i
+> npm i qrcode
+> install-pkg webp
+> install-pkg ffmpeg
+-------------
+Click Run
+```
+
 ## CARA INSTALL DI TERMUX
 ```bash
 > termux-setup-storage
